@@ -1,4 +1,4 @@
-package com.gentech.banking_project.dtolayer;
+package com.gentech.bnk.dtolayer;
 
 
 import lombok.AllArgsConstructor;

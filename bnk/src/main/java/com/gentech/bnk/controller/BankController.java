@@ -1,7 +1,8 @@
-package com.gentech.banking_project.controller;
+package com.gentech.bnk.controller;
 
-import com.gentech.banking_project.dtolayer.BankingDto;
-import com.gentech.banking_project.serviceimpl.BankingServiceImpl;
+
+import com.gentech.bnk.dtolayer.BankingDto;
+import com.gentech.bnk.serviceimpl.BankingServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
