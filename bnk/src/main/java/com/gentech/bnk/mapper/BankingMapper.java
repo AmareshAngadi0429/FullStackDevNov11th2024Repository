@@ -1,7 +1,8 @@
-package com.gentech.banking_project.mapper;
+package com.gentech.bnk.mapper;
 
-import com.gentech.banking_project.dtolayer.BankingDto;
-import com.gentech.banking_project.entity.Banking;
+
+import com.gentech.bnk.dtolayer.BankingDto;
+import com.gentech.bnk.entity.Banking;
 
 public class BankingMapper {
     public static BankingDto mapToBankingDTO(Banking banking)

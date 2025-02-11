@@ -1,4 +1,4 @@
-package com.gentech.banking_project.entity;
+package com.gentech.bnk.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

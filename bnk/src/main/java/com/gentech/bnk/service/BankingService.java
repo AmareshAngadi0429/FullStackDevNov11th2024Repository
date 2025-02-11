@@ -1,6 +1,7 @@
-package com.gentech.banking_project.service;
+package com.gentech.bnk.service;
 
-import com.gentech.banking_project.dtolayer.BankingDto;
+
+import com.gentech.bnk.dtolayer.BankingDto;
 
 public interface BankingService {
     public BankingDto createSavingAccount(BankingDto bankingDto);

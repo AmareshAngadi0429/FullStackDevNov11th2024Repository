@@ -1,10 +1,11 @@
-package com.gentech.banking_project.serviceimpl;
+package com.gentech.bnk.serviceimpl;
 
-import com.gentech.banking_project.dtolayer.BankingDto;
-import com.gentech.banking_project.entity.Banking;
-import com.gentech.banking_project.mapper.BankingMapper;
-import com.gentech.banking_project.repositary.BankingRepo;
-import com.gentech.banking_project.service.BankingService;
+
+import com.gentech.bnk.dtolayer.BankingDto;
+import com.gentech.bnk.entity.Banking;
+import com.gentech.bnk.mapper.BankingMapper;
+import com.gentech.bnk.repositary.BankingRepo;
+import com.gentech.bnk.service.BankingService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
