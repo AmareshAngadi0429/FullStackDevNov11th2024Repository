@@ -44,6 +44,7 @@ public class UniversityServiceImpl implements UniversityService {
     @Override
     public List<UniversityDto> getByName(String name)throws Exception {
         Optional<List<University>> university = repository.findByName(name);
+
         university.filter(universityList -> !universityList.isEmpty()).orElseThrow(()->new UniversityExepection("not found"));
 
         return university.get().stream().map((university1 -> UniversityMapper.mapToUniversityDto(university1))).collect(Collectors.toList());
@@ -153,6 +154,28 @@ public class UniversityServiceImpl implements UniversityService {
     @Override
     public Integer deleteUniversityByName(String name) {
         return repository.deleteUniversityByName(name);
+    }
+
+    @Override
+    public Integer findAllPageCount() {
+        int  val = repository.findAll().size();
+        return val;
+    }
+
+    @Override
+    public List<UniversityDto> getAllUniversitiesWithoutPagination() throws Exception {
+        if (repository.findAll().size()==0)
+        {
+            throw new Exception((" no records  found"));
+        }
+        else {
+            return repository.findAll().stream().map((university -> UniversityMapper.mapToUniversityDto(university))).collect(Collectors.toList());
+        }
+    }
+
+    @Override
+    public void deleteInBatch(List<Integer> id) {
+        repository.deleteAllByIdInBatch(id);
     }
 
 

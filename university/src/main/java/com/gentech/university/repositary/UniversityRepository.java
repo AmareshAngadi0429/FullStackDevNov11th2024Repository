@@ -24,6 +24,10 @@ public interface UniversityRepository extends JpaRepository<University,Integer>,
 
     Optional<List<University>> findByChairmanAndViceChairman(String chairman,String viceChairman, Pageable page);
 
+
+
+
+
     @Query("FROM University WHERE chairman=:chairman OR viceChairman=:viceChairman")
     Optional<List<University>>getUniversityByChairmanOrViceChairman(@Param("chairman") String chairman,@Param("viceChairman") String viceChairman,Pageable pageable);
 
@@ -49,10 +53,6 @@ public interface UniversityRepository extends JpaRepository<University,Integer>,
     @Transactional
     @Query("DELETE FROM University WHERE name=:name")
     Integer deleteUniversityByName(String name);
-
-
-
-
 
 
 }

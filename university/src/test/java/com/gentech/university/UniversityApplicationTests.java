@@ -90,7 +90,7 @@ class UniversityApplicationTests {
 			UniversityDto dto = new UniversityDto();
 			dto.setName((String)stringObjectMap.get("name"));
 			dto.setAddress((String) stringObjectMap.get("address"));
-			dto.setContactNo((Long)stringObjectMap.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)stringObjectMap.get("contactNo")));
 			dto.setChairman((String) stringObjectMap.get("chairman"));
 			dto.setViceChairman((String) stringObjectMap.get("viceChairman"));
 			dto.setEMail((String) stringObjectMap.get("eMail"));
@@ -136,7 +136,7 @@ class UniversityApplicationTests {
 					UniversityDto dto = new UniversityDto();
 					dto.setName((String) map.get("name"));
 					dto.setAddress((String) map.get("address"));
-					dto.setContactNo((Long)map.get("contactNo"));
+					dto.setContactNo(Long.parseLong((String)map.get("contactNo")));
 					dto.setChairman((String) map.get("chairman"));
 					dto.setViceChairman((String)map.get( "viceChairman"));
 					dto.setEMail((String) map.get("eMail"));
@@ -172,7 +172,7 @@ class UniversityApplicationTests {
 			UniversityDto dto = new UniversityDto();
 			dto.setName((String)stringObjectMap.get("name"));
 			dto.setAddress((String) stringObjectMap.get("address"));
-			dto.setContactNo((Long)stringObjectMap.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)stringObjectMap.get("contactNo")));
 			dto.setChairman((String) stringObjectMap.get("chairman"));
 			dto.setViceChairman((String) stringObjectMap.get("viceChairman"));
 			dto.setEMail((String) stringObjectMap.get("eMail"));
@@ -235,10 +235,10 @@ class UniversityApplicationTests {
 		List<UniversityDto >universityDtoList1 = universityDtoList.stream().map(map ->
 		{
 			UniversityDto dto = new UniversityDto();
-			dto.setId((int)map.get("id"));
+			dto.setId(Integer.parseInt((String) map.get("id")));
 			dto.setName((String)map.get("name"));
 			dto.setAddress((String) map.get("address"));
-			dto.setContactNo((Long)map.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)map.get("contactNo")));
 			dto.setChairman((String) map.get("chairman"));
 			dto.setViceChairman((String) map.get("viceChairman"));
 			dto.setEMail((String) map.get("eMail"));
@@ -264,10 +264,10 @@ class UniversityApplicationTests {
 		List<UniversityDto >universityDtoList1 = universityDtoList.stream().map(map ->
 		{
 			UniversityDto dto = new UniversityDto();
-			dto.setId((int)map.get("id"));
+			dto.setId(Integer.parseInt((String) map.get("id")));
 			dto.setName((String)map.get("name"));
 			dto.setAddress((String) map.get("address"));
-			dto.setContactNo((Long)map.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String) map.get("contactNo")));
 			dto.setChairman((String) map.get("chairman"));
 			dto.setViceChairman((String) map.get("viceChairman"));
 			dto.setEMail((String) map.get("eMail"));
@@ -293,10 +293,10 @@ class UniversityApplicationTests {
 		List<UniversityDto >universityDtoList1 = universityDtoList.stream().map(map ->
 		{
 			UniversityDto dto = new UniversityDto();
-			dto.setId((int)map.get("id"));
+			dto.setId(Integer.parseInt((String) map.get("id")));
 			dto.setName((String)map.get("name"));
 			dto.setAddress((String) map.get("address"));
-			dto.setContactNo((Long)map.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)map.get("contactNo")));
 			dto.setChairman((String) map.get("chairman"));
 			dto.setViceChairman((String) map.get("viceChairman"));
 			dto.setEMail((String) map.get("eMail"));
@@ -324,10 +324,10 @@ class UniversityApplicationTests {
 		List<UniversityDto >universityDtoList1 = universityDtoList.stream().map(map ->
 		{
 			UniversityDto dto = new UniversityDto();
-			dto.setId((int)map.get("id"));
+			dto.setId(Integer.parseInt((String) map.get("id")));
 			dto.setName((String)map.get("name"));
 			dto.setAddress((String) map.get("address"));
-			dto.setContactNo((Long)map.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)map.get("contactNo")));
 			dto.setChairman((String) map.get("chairman"));
 			dto.setViceChairman((String) map.get("viceChairman"));
 			dto.setEMail((String) map.get("eMail"));
@@ -354,10 +354,10 @@ class UniversityApplicationTests {
 		List<UniversityDto >universityDtoList1 = universityDtoList.stream().map(map ->
 		{
 			UniversityDto dto = new UniversityDto();
-			dto.setId((int)map.get("id"));
+			dto.setId(Integer.parseInt((String) map.get("id")));
 			dto.setName((String)map.get("name"));
 			dto.setAddress((String) map.get("address"));
-			dto.setContactNo((Long)map.get("contactNo"));
+			dto.setContactNo(Long.parseLong((String)map.get("contactNo")));
 			dto.setChairman((String) map.get("chairman"));
 			dto.setViceChairman((String) map.get("viceChairman"));
 			dto.setEMail((String) map.get("eMail"));

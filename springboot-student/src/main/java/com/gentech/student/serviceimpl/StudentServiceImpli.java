@@ -45,6 +45,7 @@ public class StudentServiceImpli implements StudentService
         st.setStdId(id);
         st.setStdName(std.getStdName());
         st.setCourseName(std.getCourseName());
+        stdRepo.save(st);
 
         return StudentMapping.mapToStudentDto(st);
     }

@@ -41,4 +41,8 @@ public interface UniversityService {
     Integer updateUniversitySetEmailByChairman(String email, String chairman);
 
     Integer deleteUniversityByName(String name);
+    Integer findAllPageCount();
+
+    List<UniversityDto> getAllUniversitiesWithoutPagination()throws  Exception;
+    void deleteInBatch (List<Integer> id);
 }

@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/v1")
 public class UniversityController {
@@ -134,6 +134,25 @@ public class UniversityController {
     {
         int count = service.deleteUniversityByName(name);
         return new ResponseEntity<>(count+" no of rows are affected",HttpStatus.OK);
+    }
+
+    @GetMapping("/findallpagecount")
+    Integer findAllPageCount()
+    {
+        return service.findAllPageCount();
+    }
+    @GetMapping("/findallwithoutpaging")
+    ResponseEntity<List<UniversityDto>> findAllWithoutPaging()throws Exception
+    {
+        return new ResponseEntity<>(service.getAllUniversitiesWithoutPagination(),HttpStatus.OK);
+    }
+
+    @DeleteMapping("/deleteinbatch")
+
+    ResponseEntity<String> deleteInBatch(@RequestParam List<Integer> list)
+    {
+        service.deleteInBatch(list);
+        return  new ResponseEntity<>(" deleted sucessfully",HttpStatus.OK);
     }
 
 
