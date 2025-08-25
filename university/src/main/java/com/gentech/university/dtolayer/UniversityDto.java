@@ -26,6 +26,8 @@ public class UniversityDto {
 
     private String eMail;
 
+
+
     public UniversityDto(String name, int id, String chairman, String viceChairman, String address, long contactNo, String eMail) {
         this.name = name;
         this.id = id;
@@ -35,4 +37,7 @@ public class UniversityDto {
         this.contactNo = contactNo;
         this.eMail = eMail;
     }
+
+
+
 }
