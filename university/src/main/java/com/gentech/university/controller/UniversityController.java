@@ -17,7 +17,7 @@ public class UniversityController {
     @PostMapping("/saveuniversity")
     public ResponseEntity<UniversityDto> saveUniversity(@RequestBody UniversityDto universityDto)
     {
-      
+
         return new ResponseEntity<>(service.create(universityDto), HttpStatus.CREATED);
     }
 
